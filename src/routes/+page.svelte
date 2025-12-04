@@ -11,10 +11,6 @@
     <div class="mt-6 flex flex-wrap gap-3 sm:gap-4 items-center text-xs sm:text-sm text-stone-700 dark:text-stone-300">
       <span class="inline-flex items-center gap-2 rounded-full border border-stone-300 dark:border-stone-700 px-3 py-1 bg-stone-100/70 dark:bg-stone-900/60">
         <span class="inline-block w-2 h-2 rounded-full bg-amber-500"></span>
-        <span>Zero funding</span>
-      </span>
-      <span class="inline-flex items-center gap-2 rounded-full border border-stone-300 dark:border-stone-700 px-3 py-1 bg-stone-100/70 dark:bg-stone-900/60">
-        <span class="inline-block w-2 h-2 rounded-full bg-amber-500"></span>
         <span>100% open source</span>
       </span>
       <span class="inline-flex items-center gap-2 rounded-full border border-stone-300 dark:border-stone-700 px-3 py-1 bg-stone-100/70 dark:bg-stone-900/60">
@@ -25,87 +21,88 @@
   </div>
 </section>
 
+<!-- SINGLE FOCUS + VALUES + TEAM ROW -->
 <section class="w-full bg-stone-100 dark:bg-stone-950 py-12 sm:py-16 border-b border-stone-200 dark:border-stone-800 transition-colors duration-300">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
-      <h3 class="uppercase tracking-widest text-xs sm:text-sm font-bold text-stone-700 dark:text-stone-300">
-        What's brewing at the Nest?
-      </h3>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
+
+    <!-- header -->
+    <div class="flex items-center justify-between">
+      <div>
+        <h3 class="uppercase tracking-widest text-xs sm:text-sm font-bold text-stone-700 dark:text-stone-300">Current focus areas</h3>
+      </div>
     </div>
 
-    <p class="max-w-2xl text-sm sm:text-base text-stone-700 dark:text-stone-300 mb-8 sm:mb-10 opacity-90">
-      A few quietly simmering questions — hints only, no recipes. Small experiments, strange rewards.
-    </p>
-
-    <div class="grid sm:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
-      <!-- Card 1 -->
-      <article class="group">
-        <div
-          class="relative border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/70 rounded-lg p-5 h-full flex flex-col transition-all duration-200 transform group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-amber-300/10"
-        >
-          <div class="flex items-center gap-3 mb-2">
-            <span class="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-amber-400/90"></span>
-            <span class="text-xs font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">Direction 01</span>
-          </div>
-
-          <h4 class="text-lg sm:text-xl font-extrabold mb-2 text-stone-800 dark:text-stone-50">
-            Minimal reasoning
+    <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 max-w-6xl mx-auto">
+      <article class="group relative">
+        <div class="relative border border-stone-200 dark:border-stone-800 bg-white/60 dark:bg-stone-900/60 backdrop-blur-sm rounded-2xl p-6 sm:p-8 transition-transform duration-300 transform hover:-translate-y-1 shadow-sm dark:shadow-none">
+          <h4 class="mt-4 text-2xl sm:text-3xl font-extrabold leading-tight text-stone-900 dark:text-stone-50">
+            Shrinking intelligence to its sharpest core.
           </h4>
-
-          <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 leading-relaxed grow">
-            Strip models to the essentials. Which tiny circuits still look like “thinking”? We look for the behaviors that refuse to vanish.
+          <p class="mt-3 text-sm sm:text-base text-stone-600 dark:text-stone-300 leading-relaxed">
+            We are building one thing: the smallest possible AI model that delivers the highest possible performance. No flash. No fanfare. Only ruthless distillation and careful evaluation.
           </p>
 
-          <p class="mt-4 text-xs sm:text-sm text-stone-400 italic">
-            Tiny models, big surprises — what survives the pruning?
-          </p>
+          <div class="mt-5 flex items-center justify-between gap-4">
+            <p class="text-xs sm:text-sm italic text-stone-400 dark:text-stone-500">
+              Minimal footprint. Maximal surprise.
+            </p>
+          </div>
         </div>
       </article>
-
-      <!-- Card 2 -->
-      <article class="group">
-        <div
-          class="relative border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/70 rounded-lg p-5 h-full flex flex-col transition-all duration-200 transform group-hover:-translate-y-1 group-hover:shadow-md group-hover:shadow-amber-300/10"
-        >
-          <div class="flex items-center gap-3 mb-2">
-            <span class="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-amber-400/90"></span>
-            <span class="text-xs font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">Direction 02</span>
-          </div>
-
-          <h4 class="text-lg sm:text-xl font-extrabold mb-2 text-stone-800 dark:text-stone-50">
-            Self-steering learners
+      <article class="group relative mt-8 sm:mt-0">
+        <div class="relative border border-stone-200 dark:border-stone-800 bg-white/60 dark:bg-stone-900/60 backdrop-blur-sm rounded-2xl p-6 sm:p-8 transition-transform duration-300 transform hover:-translate-y-1 shadow-sm dark:shadow-none">
+          <h4 class="mt-4 text-2xl sm:text-3xl font-extrabold leading-tight text-stone-900 dark:text-stone-50">
+            New foundations for world models.
           </h4>
 
-          <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 leading-relaxed grow">
-            Can systems bootstrap skill from noisy feedback and their own actions — no huge curated corpora required? We test autonomy, not hype.
+          <p class="mt-3 text-sm sm:text-base text-stone-600 dark:text-stone-300 leading-relaxed">
+            Exploring compact, compositional world-model architectures that can reason, plan, correct themselves, self-learn, and build internal maps of reality.
           </p>
 
-          <p class="mt-4 text-xs sm:text-sm text-stone-400 italic">
-            When training data becomes an ecosystem, what intelligence emerges?
-          </p>
+          <div class="mt-5 flex items-center justify-between gap-4">
+            <p class="text-xs sm:text-sm italic text-stone-400 dark:text-stone-500">
+              Small theories. Big leaps.
+            </p>
+          </div>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section
-  id="contact"
-  class="w-full bg-stone-100 dark:bg-stone-950 py-12 sm:py-16 transition-colors duration-300 border-b border-stone-200 dark:border-stone-800"
->
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-stone-900 dark:text-stone-50">
-      Join the conversation
+<section class="w-full bg-stone-100 dark:bg-stone-950 py-10 sm:py-14 transition-colors duration-300 border-b border-stone-200 dark:border-stone-800">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-4">
+    <h3 class="text-lg sm:text-xl font-bold text-stone-900 dark:text-stone-50">
+      We're quietly assembling our core team
     </h3>
-    <p class="mb-6 sm:mb-8 opacity-90 max-w-lg mx-auto text-sm sm:text-base text-stone-700 dark:text-stone-300">
-      Have ideas, want to collaborate, or just curious what we are quietly building? We welcome contributors of all backgrounds — bring your questions.
+
+    <p class="max-w-2xl mx-auto text-sm sm:text-base text-stone-700 dark:text-stone-300 leading-relaxed">
+      If you're deeply curious, love silent deep work, and prefer building real systems, you’ll fit right in. Ideal for people who are well settled, FIRE’d or close, and want to spend their free time pushing
+      the frontier of practical intelligence.
     </p>
 
-    <a
-      href="mailto:the.research.nest@gmail.com"
-      class="inline-block border-2 border-stone-300 dark:border-stone-700 px-6 sm:px-8 py-2.5 sm:py-3 font-bold rounded-md hover:border-amber-500 hover:bg-stone-100 dark:hover:bg-stone-900 transition-colors duration-200 uppercase tracking-wide text-sm sm:text-base"
-    >
+    <p class="text-xs sm:text-sm italic text-stone-400 dark:text-stone-500">
+      No noise. Just meaningful work.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT (kept, tightened) -->
+<section id="contact" class="w-full bg-stone-100 dark:bg-stone-950 py-12 sm:py-16 transition-colors duration-300 border-b border-stone-200 dark:border-stone-800">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-stone-900 dark:text-stone-50">Join the conversation</h3>
+    <p class="mb-6 sm:mb-8 opacity-90 max-w-lg mx-auto text-sm sm:text-base text-stone-700 dark:text-stone-300">
+      Have ideas, want to collaborate, or just curious what we are quietly building? We welcome contributors of all backgrounds. Hit us up with your questions.
+    </p>
+
+    <a href="mailto:the.research.nest@gmail.com" class="inline-block border-2 border-stone-300 dark:border-stone-700 px-6 sm:px-8 py-2.5 sm:py-3 font-bold rounded-md hover:border-amber-500 hover:bg-stone-100 dark:hover:bg-stone-900 transition-colors duration-200 uppercase tracking-wide text-sm sm:text-base">
       the.research.nest@gmail.com
     </a>
   </div>
 </section>
+
+<footer class="w-full bg-stone-50 dark:bg-stone-950 py-6 sm:py-8 transition-colors duration-300">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center text-xs sm:text-sm text-stone-500 dark:text-stone-400">
+    &copy; 2026 The Research Nest. All rights reserved.
+  </div>
+</footer>

@@ -1,7 +1,7 @@
 <svelte:head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Research Nest — an indie, community-powered research lab</title>
+  <title>The Research Nest, an indie research lab bootstrapping practical intelligence for everyone</title>
   <script>
     try {
       if (
@@ -19,69 +19,67 @@
 </svelte:head>
 
 <script lang="ts">
-  import "../app.css";
-  import { onMount } from "svelte";
+  import "../app.css"
+  import { onMount } from "svelte"
 
-  // Runes-mode props/state (kept as-is)
-  let { children } = $props();
+  let { children } = $props()
 
   // Guard document access for SSR — compute initial safely
-  const _initialDark = (typeof document !== "undefined") ? document.documentElement.classList.contains("dark") : false;
-  let isDark = $state(_initialDark);
+  const _initialDark = (typeof document !== "undefined") ? document.documentElement.classList.contains("dark") : false
+  let isDark = $state(_initialDark)
 
   // Function to safely check and set theme based on preference/storage
   function initializeTheme() {
     try {
       // guard window/localStorage for non-browser environments
       if (typeof window === "undefined") {
-        isDark = _initialDark;
-        return;
+        isDark = _initialDark
+        return
       }
 
-      const storedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const storedTheme = localStorage.getItem('theme')
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
 
       if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-        document.documentElement.classList.add("dark");
-        isDark = true;
+        document.documentElement.classList.add("dark")
+        isDark = true
       } else {
-        document.documentElement.classList.remove("dark");
-        isDark = false;
+        document.documentElement.classList.remove("dark")
+        isDark = false
       }
     } catch (e) {
       // Fallback if localStorage or window.matchMedia is unavailable
-      isDark = (typeof document !== "undefined") && document.documentElement.classList.contains("dark");
+      isDark = (typeof document !== "undefined") && document.documentElement.classList.contains("dark")
     }
   }
 
   onMount(() => {
     // Re-run initialization to catch any state changes missed by the FOUC script
-    initializeTheme();
+    initializeTheme()
 
     // Close mobile menu on outside click
     const handleClickOutside = (e: any) => {
       const details = document.querySelector("details");
       if (details && details.hasAttribute("open") && !details.contains(e.target)) {
-        details.removeAttribute("open");
+        details.removeAttribute("open")
       }
-    };
-    document.addEventListener("click", handleClickOutside);
+    }
+    document.addEventListener("click", handleClickOutside)
 
     return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  });
+      document.removeEventListener("click", handleClickOutside)
+    }
+  })
 
   // Simplified toggle function using Svelte Runes state (kept logic intact)
   function toggleTheme() {
-    const html = document.documentElement;
+    const html = document.documentElement
 
     // Toggle the state first
-    isDark = !isDark;
-
+    isDark = !isDark
     // Update HTML class and localStorage based on the new state
     if (isDark) {
-      html.classList.add("dark");
+      html.classList.add("dark")
       try { localStorage.theme = "dark"; } catch (e) {}
     } else {
       html.classList.remove("dark");
@@ -90,7 +88,7 @@
   }
 
   // Mobile menu open state for improved accessibility (kept)
-  let isMenuOpen = $state(false);
+  let isMenuOpen = $state(false)
   // removed unused toggleMenu() to avoid unused-code warnings
 </script>
 
