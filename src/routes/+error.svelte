@@ -2,7 +2,7 @@
     <div class="text-center max-w-lg p-6 rounded-md bg-stone-800/90 dark:bg-stone-900/90 backdrop-blur-sm border border-stone-700">
         <h2 class="text-2xl font-semibold text-stone-50">Something went wrong</h2>
         <p class="mt-3 text-stone-300">
-            We encountered an unexpected error. You can try returning to the homepage, or contact the team if the issue persists — we're here to help.
+            We encountered an unexpected error. You can try returning to the homepage, or contact the team if the issue persists - we're here to help.
         </p>
         <div class="mt-5 flex justify-center gap-4">
             <a

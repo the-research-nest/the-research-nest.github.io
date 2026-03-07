@@ -1,108 +1,236 @@
-<section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24 border-b border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950 transition-colors duration-300">
-  <div class="border-l-4 border-amber-500 pl-4 sm:pl-6 py-1 space-y-4 sm:space-y-6">
-    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-4xl">
-      Bootstrapping practical intelligence for everyone
-    </h1>
+<svelte:head>
+  <title>The Research Nest | Independent Research Forum</title>
+  <meta
+    name="description"
+    content="The Research Nest is an independent, open research forum focused on practical intelligence, efficient systems, and compact world models."
+  />
+</svelte:head>
 
-    <p class="max-w-2xl text-base sm:text-lg md:text-xl text-stone-700 dark:text-stone-300 leading-relaxed">
-      An open, community-driven collective quietly focused on efficient, practical approaches to capable systems.
-    </p>
+<script lang="ts">
+  import { publishedResearchPosts } from "$lib/data/research-posts"
 
-    <div class="mt-6 flex flex-wrap gap-3 sm:gap-4 items-center text-xs sm:text-sm text-stone-700 dark:text-stone-300">
-      <span class="inline-flex items-center gap-2 rounded-full border border-stone-300 dark:border-stone-700 px-3 py-1 bg-stone-100/70 dark:bg-stone-900/60">
-        <span class="inline-block w-2 h-2 rounded-full bg-amber-500"></span>
-        <span>100% open source</span>
-      </span>
-      <span class="inline-flex items-center gap-2 rounded-full border border-stone-300 dark:border-stone-700 px-3 py-1 bg-stone-100/70 dark:bg-stone-900/60">
-        <span class="inline-block w-2 h-2 rounded-full bg-amber-500"></span>
-        <span>Remote-first</span>
-      </span>
-    </div>
-  </div>
-</section>
+  const currentFocusHref = publishedResearchPosts[0]
+    ? `/research/${publishedResearchPosts[0].slug}`
+    : "/research"
+</script>
 
-<!-- SINGLE FOCUS + VALUES + TEAM ROW -->
-<section class="w-full bg-stone-100 dark:bg-stone-950 py-12 sm:py-16 border-b border-stone-200 dark:border-stone-800 transition-colors duration-300">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
-
-    <!-- header -->
-    <div class="flex items-center justify-between">
-      <div>
-        <h3 class="uppercase tracking-widest text-xs sm:text-sm font-bold text-stone-700 dark:text-stone-300">Current focus areas</h3>
+<div class="landing">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Bootstrapping practical intelligence for everyone.</h1>
+      <p class="hero-text">
+        An open research forum quietly focused on
+        efficient, practical approaches to capable systems. The work stays narrow, serious, and
+        evaluation-first.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href="/research">Read research</a>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 max-w-6xl mx-auto">
-      <article class="group relative">
-        <div class="relative border border-stone-200 dark:border-stone-800 bg-white/60 dark:bg-stone-900/60 backdrop-blur-sm rounded-2xl p-6 sm:p-8 transition-transform duration-300 transform hover:-translate-y-1 shadow-sm dark:shadow-none">
-          <h4 class="mt-4 text-2xl sm:text-3xl font-extrabold leading-tight text-stone-900 dark:text-stone-50">
-            Shrinking intelligence to its sharpest core.
-          </h4>
-          <p class="mt-3 text-sm sm:text-base text-stone-600 dark:text-stone-300 leading-relaxed">
-            We are building one thing: the smallest possible AI model that delivers the highest possible performance. No flash. No fanfare. Only ruthless distillation and careful evaluation.
-          </p>
+    <aside class="focus-panel">
+      <div class="panel-kicker">Current focus area</div>
+      <h2>Shrinking intelligence to its sharpest core.</h2>
+      <p class="panel-copy">
+        We are focused on one question: what is the smallest possible AI model that can still
+        deliver meaningful performance, structured reasoning, and genuine learning?
+      </p>
+      <p class="panel-note">Minimal footprint. Maximal surprise.</p>
+      <a class="panel-link" href={currentFocusHref}>Read more</a>
+    </aside>
+  </section>
+</div>
 
-          <div class="mt-5 flex items-center justify-between gap-4">
-            <p class="text-xs sm:text-sm italic text-stone-400 dark:text-stone-500">
-              Minimal footprint. Maximal surprise.
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class="group relative mt-8 sm:mt-0">
-        <div class="relative border border-stone-200 dark:border-stone-800 bg-white/60 dark:bg-stone-900/60 backdrop-blur-sm rounded-2xl p-6 sm:p-8 transition-transform duration-300 transform hover:-translate-y-1 shadow-sm dark:shadow-none">
-          <h4 class="mt-4 text-2xl sm:text-3xl font-extrabold leading-tight text-stone-900 dark:text-stone-50">
-            New foundations for world models.
-          </h4>
+<style>
+  .landing {
+    width: min(1080px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 0.7rem 0 3rem;
+    color: #1c1510;
+  }
 
-          <p class="mt-3 text-sm sm:text-base text-stone-600 dark:text-stone-300 leading-relaxed">
-            Exploring compact, compositional world-model architectures that can reason, plan, correct themselves, self-learn, and build internal maps of reality.
-          </p>
+  :global(html.dark) .landing {
+    color: #f8f1e8;
+  }
 
-          <div class="mt-5 flex items-center justify-between gap-4">
-            <p class="text-xs sm:text-sm italic text-stone-400 dark:text-stone-500">
-              Small theories. Big leaps.
-            </p>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+    gap: 1.75rem;
+    min-height: calc(100vh - 8.25rem);
+    align-items: center;
+    padding: 2.35rem 0 1.4rem;
+  }
 
-<section class="w-full bg-stone-100 dark:bg-stone-950 py-10 sm:py-14 transition-colors duration-300 border-b border-stone-200 dark:border-stone-800">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-4">
-    <h3 class="text-lg sm:text-xl font-bold text-stone-900 dark:text-stone-50">
-      We're quietly assembling our core team
-    </h3>
+  .hero-copy {
+    max-width: 43rem;
+    transform: translateY(-1.35rem);
+  }
 
-    <p class="max-w-2xl mx-auto text-sm sm:text-base text-stone-700 dark:text-stone-300 leading-relaxed">
-      If you're deeply curious, love silent deep work, and prefer building real systems, you’ll fit right in. Ideal for people who are well settled, FIRE’d or close, and want to spend their free time pushing
-      the frontier of practical intelligence.
-    </p>
+  .panel-kicker,
+  h1,
+  h2,
+  .hero-text,
+  .panel-copy,
+  .panel-note,
+  .panel-link {
+    font-family: Georgia, "Times New Roman", serif;
+  }
 
-    <p class="text-xs sm:text-sm italic text-stone-400 dark:text-stone-500">
-      No noise. Just meaningful work.
-    </p>
-  </div>
-</section>
+  h1 {
+    margin: 0.75rem 0 0;
+    max-width: 11ch;
+    color: inherit;
+    font-size: clamp(3rem, 6vw, 5.75rem);
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+  }
 
-<!-- CONTACT (kept, tightened) -->
-<section id="contact" class="w-full bg-stone-100 dark:bg-stone-950 py-12 sm:py-16 transition-colors duration-300 border-b border-stone-200 dark:border-stone-800">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-stone-900 dark:text-stone-50">Join the conversation</h3>
-    <p class="mb-6 sm:mb-8 opacity-90 max-w-lg mx-auto text-sm sm:text-base text-stone-700 dark:text-stone-300">
-      Have ideas, want to collaborate, or just curious what we are quietly building? We welcome contributors of all backgrounds. Hit us up with your questions.
-    </p>
+  .hero-text {
+    max-width: 37rem;
+    margin: 1.1rem 0 0;
+    color: #5f5247;
+    font-size: 1rem;
+    line-height: 1.9;
+  }
 
-    <a href="mailto:the.research.nest@gmail.com" class="inline-block border-2 border-stone-300 dark:border-stone-700 px-6 sm:px-8 py-2.5 sm:py-3 font-bold rounded-md hover:border-amber-500 hover:bg-stone-100 dark:hover:bg-stone-900 transition-colors duration-200 uppercase tracking-wide text-sm sm:text-base">
-      the.research.nest@gmail.com
-    </a>
-  </div>
-</section>
+  :global(html.dark) .hero-text {
+    color: #ddd0c4;
+  }
 
-<footer class="w-full bg-stone-50 dark:bg-stone-950 py-6 sm:py-8 transition-colors duration-300">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center text-xs sm:text-sm text-stone-500 dark:text-stone-400">
-    &copy; 2026 The Research Nest. All rights reserved.
-  </div>
-</footer>
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.9rem;
+    padding: 0.75rem 1.15rem;
+    border-radius: 999px;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    transition:
+      background-color 160ms ease,
+      border-color 160ms ease,
+      color 160ms ease;
+  }
+
+  .button:hover,
+  .button:focus-visible,
+  .panel-link:hover,
+  .panel-link:focus-visible {
+    outline: none;
+  }
+
+  .button.primary {
+    border: 1px solid transparent;
+    background: #1c1510;
+    color: #fffbf6;
+  }
+
+  :global(html.dark) .button.primary {
+    background: #f7eee5;
+    color: #171210;
+  }
+
+  .focus-panel {
+    border: 1px solid #d9ccb9;
+    border-radius: 1.4rem;
+    background: #fffbf6;
+  }
+
+  :global(html.dark) .focus-panel {
+    border-color: #4a3e36;
+    background: #171210;
+  }
+
+  .focus-panel {
+    padding: 1.35rem 1.25rem;
+  }
+
+  h2 {
+    margin: 0.7rem 0 0;
+    color: inherit;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .panel-copy {
+    margin: 0.9rem 0 0;
+    color: #4d4137;
+    font-size: 0.98rem;
+    line-height: 1.8;
+  }
+
+  .panel-note {
+    margin: 0.9rem 0 0;
+    color: #7b6b5b;
+    font-size: 0.94rem;
+    line-height: 1.8;
+    font-style: italic;
+  }
+
+  .panel-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1.3rem;
+    color: #1c1510;
+    font-size: 0.98rem;
+    font-weight: 700;
+  }
+
+  :global(html.dark) .panel-copy {
+    color: #e2d7cc;
+  }
+
+  :global(html.dark) .panel-note {
+    color: #c4b2a2;
+  }
+
+  :global(html.dark) .panel-link {
+    color: #f8f1e8;
+  }
+
+  @media (max-width: 920px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero {
+      min-height: auto;
+      padding-top: 1.75rem;
+    }
+
+    h1 {
+      max-width: 10.5ch;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .landing {
+      width: min(100%, calc(100% - 1.6rem));
+      padding-bottom: 2rem;
+    }
+
+    .hero-copy {
+      transform: none;
+    }
+
+    .cta-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+</style>
