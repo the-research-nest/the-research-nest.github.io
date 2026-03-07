@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/0.D_mr7xOE.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/4.BvinL4E4.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.BpROivId.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.C7MCAAuK.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Cb7klcjS.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.CYgJF_JY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-client.DxpX0SLG.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.3rh6Zlh0.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/render.AaMX0svx.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/svelte-head.BqyTCEg2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.BC583Y6C.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/props.4h1wWuPC.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/this.BFMAgvo_.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.BBN8YF9f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/each.DnH89zqu.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.BDWpuOHy.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/class.Bvena8yX.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.BFntO2IF.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/research-posts.CaIzxnOB.js"><!--[--><meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="The Research Nest is an independent research forum exploring compact intelligence, world models, and efficient learning."> <script>
+    try {
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    } catch (error) {
+      // localStorage may be unavailable during startup
+    }
+  </script><!--]--><!--[--><meta name="description" content="A plain-English map of the tiny-model agenda: scaling laws, grokking, data quality, and the 10K-parameter micro-lab."><!--]--><title>How Small Can an AI Brain Be and Still Actually Learn? | The Research Nest</title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><div class="app-shell svelte-1fvcdis"><!--[--><a href="/" class="corner-control corner-left svelte-1fvcdis" aria-label="Return home"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide-icon lucide lucide-house"><!--[--><!----><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"><!----></path><!----><!----><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"><!----></path><!----><!--]--><!----><!----></svg><!----></a> <button type="button" class="corner-control corner-right svelte-1fvcdis" aria-label="Switch to dark theme"><!--[!--><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide-icon lucide lucide-moon-star"><!--[--><!----><path d="M18 5h4"><!----></path><!----><!----><path d="M20 3v4"><!----></path><!----><!----><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"><!----></path><!----><!--]--><!----><!----></svg><!--]--></button><!--]--> <!--[!--><!--]--> <main class="app-main svelte-1fvcdis research-main research-article-main"><!----><!--[--><div class="guide-shell svelte-12uuujl"><div class="guide svelte-12uuujl"><header class="masthead svelte-12uuujl"><a class="archive-link svelte-12uuujl" href="/research">Research archive</a> <h1 class="svelte-12uuujl">How Small Can an AI Brain Be<br> <span class="svelte-12uuujl">and Still Actually Learn?</span></h1> <p class="masthead-copy svelte-12uuujl">A plain-English guide to our research, grounded in current literature.</p> <div class="pill-row svelte-12uuujl"><!--[--><span class="pill svelte-12wkexi" style="--pill-color:#1a5e5e; --pill-background:#1a5e5e14; --pill-border:#1a5e5e30;">10K Parameters</span><span class="pill svelte-12wkexi" style="--pill-color:#2e4060; --pill-background:#2e406014; --pill-border:#2e406030;">Scaling Laws</span><span class="pill svelte-12wkexi" style="--pill-color:#b83a12; --pill-background:#b83a1214; --pill-border:#b83a1230;">Grokking</span><span class="pill svelte-12wkexi" style="--pill-color:#8a6000; --pill-background:#8a600014; --pill-border:#8a600030;">12 Primary Sources</span><!--]--></div></header> <nav class="chapter-nav svelte-12uuujl" aria-label="Research guide chapters"><!--[--><button type="button" class="chapter-button svelte-12uuujl active">1. The Big Idea</button><button type="button" class="chapter-button svelte-12uuujl ">2. What Research Says</button><button type="button" class="chapter-button svelte-12uuujl ">3. The Experiment Plan</button><button type="button" class="chapter-button svelte-12uuujl ">4. The 10K Micro-Lab</button><button type="button" class="chapter-button svelte-12uuujl ">5. What to Feed It</button><button type="button" class="chapter-button svelte-12uuujl ">6. How We Know It Worked</button><button type="button" class="chapter-button svelte-12uuujl ">7. The Proof Path</button><!--]--></nav> <!--[--><section class="chapter svelte-12uuujl"><h2 class="svelte-12uuujl">Chapter 1 - The Big Idea</h2> <p class="lead svelte-12uuujl">Imagine hiring someone to memorize and truly <em>understand</em> an encyclopedia.
+          You could hire a genius with a large brain, or you could give a smaller brain a
+          perfectly organised, step-by-step version of the same encyclopedia. Which matters
+          more - the size of the brain, or the quality of the book?</p> <div class="analogy svelte-12uuujl"><strong>Idea:</strong> That's the core of what we're studying. An AI model's
+          "parameters" are its brain cells. Training "tokens" are the words it reads. We want
+          to know: <strong>what is the smallest possible brain that can truly understand a given amount of information?</strong></div> <p class="para svelte-12uuujl">This question has never been formally answered below one million parameters. We're
+          starting with just <strong class="accent-rust svelte-12uuujl">ten thousand</strong>. That's not a
+          typo. And it's deliberate - it puts us in completely uncharted territory where every
+          experiment runs in minutes on a laptop.</p> <div class="divider svelte-12uuujl" aria-hidden="true"><span class="svelte-12uuujl"></span> <small class="svelte-12uuujl">...</small> <span class="svelte-12uuujl"></span></div> <h3 class="svelte-12uuujl">The Two Questions We're Asking</h3> <div class="two-column-grid svelte-12uuujl"><!--[--><article class="accent-card svelte-12uuujl" style="--accent:#1a5e5e; --accent-surface:#1a5e5e0d; --accent-border:#1a5e5e2c;"><div class="card-label svelte-12uuujl">Question A - Forward</div> <div class="card-quote svelte-12uuujl">"I have this much data. How small can my AI be?"</div> <div class="card-copy svelte-12uuujl">You want an AI that knows everything about tax law. How many parameters does it actually need to genuinely understand that domain?</div></article><article class="accent-card svelte-12uuujl" style="--accent:#b83a12; --accent-surface:#b83a120d; --accent-border:#b83a122c;"><div class="card-label svelte-12uuujl">Question B - Inverse</div> <div class="card-quote svelte-12uuujl">"My AI has only 10K params. How much can it learn?"</div> <div class="card-copy svelte-12uuujl">You're building an AI for a hearing aid. It's tiny. What's the maximum knowledge you can squeeze in - and how should you write that knowledge?</div></article><!--]--></div> <div class="callout svelte-12uuujl" style="--accent:#3d6644; --accent-surface:#3d66440e; --accent-border:#3d66442e;"><div class="callout-title svelte-12uuujl">Target: Why this matters in the real world</div> <div class="callout-copy svelte-12uuujl">If we can answer these questions, we can build dramatically smaller, cheaper,
+            faster AIs for specific tasks. A hospital AI for diagnosing chest X-rays doesn't
+            need to know how to write poetry. If we know the exact minimum size it needs to
+            understand radiology - that changes how we build and deploy AI everywhere.</div></div> <div class="divider svelte-12uuujl" aria-hidden="true"><span class="svelte-12uuujl"></span> <small class="svelte-12uuujl">...</small> <span class="svelte-12uuujl"></span></div> <h3 class="svelte-12uuujl">What "Understanding" Means in This Experiment</h3> <p class="para svelte-12uuujl">"Understanding" is a fuzzy word, so we pin it down with four concrete, measurable
+          tests. A model only counts as having truly understood its training data if it passes
+          all four:</p> <div class="stack-list svelte-12uuujl"><!--[--><div class="stack-row svelte-12uuujl"><div class="number-badge svelte-12uuujl" style="--accent:#1a5e5e; --accent-surface:#1a5e5e18;">1</div> <div><div class="stack-title svelte-12uuujl">It answers questions it has never seen</div> <div class="card-copy muted svelte-12uuujl">Not regurgitating memorised answers - genuinely applying what it learned to new combinations and situations.</div></div></div><div class="stack-row svelte-12uuujl"><div class="number-badge svelte-12uuujl" style="--accent:#3d6644; --accent-surface:#3d664418;">2</div> <div><div class="stack-title svelte-12uuujl">It reasons across multiple steps</div> <div class="card-copy muted svelte-12uuujl">Chaining facts together: 'A is bigger than B, B is bigger than C, therefore A is bigger than C.'</div></div></div><div class="stack-row svelte-12uuujl"><div class="number-badge svelte-12uuujl" style="--accent:#8a6000; --accent-surface:#8a600018;">3</div> <div><div class="stack-title svelte-12uuujl">It knows what it doesn't know</div> <div class="card-copy muted svelte-12uuujl">Confident on things it learned, appropriately uncertain on things outside its training. This is called calibration.</div></div></div><div class="stack-row svelte-12uuujl"><div class="number-badge svelte-12uuujl" style="--accent:#b83a12; --accent-surface:#b83a1218;">4</div> <div><div class="stack-title svelte-12uuujl">Its knowledge transfers to adjacent tasks</div> <div class="card-copy muted svelte-12uuujl">Its internal representations are good enough that a tiny 500-parameter add-on can learn a related task very fast.</div></div></div><!--]--></div></section><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <nav class="chapter-footer svelte-12uuujl" aria-label="Chapter navigation"><div class="chapter-progress svelte-12uuujl">Chapter 1 of 7</div> <div class="chapter-footer-actions svelte-12uuujl"><button type="button" class="chapter-nav-button svelte-12uuujl" disabled>Previous</button> <button type="button" class="chapter-nav-button svelte-12uuujl">Next</button></div></nav></div></div><!--]--><!----><!----></main></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_f609ci = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.BpROivId.js"),
+						import("../_app/immutable/entry/app.3rh6Zlh0.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
