@@ -1057,7 +1057,7 @@
     margin-bottom: 0.85rem;
     color: var(--muted-color);
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -1079,7 +1079,7 @@
     margin: 0;
     color: var(--muted-color);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.75;
   }
 
@@ -1106,7 +1106,7 @@
     background: transparent;
     color: var(--muted-color);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     cursor: pointer;
     transition:
       background-color 150ms ease,
@@ -1133,14 +1133,14 @@
     border-bottom: 1px solid var(--rule-color);
     color: var(--ink-color);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .chapter h3 {
     margin: 0 0 0.9rem;
     color: var(--ink-color);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.08rem;
+    font-size: 1.3rem;
   }
 
   .lead,
@@ -1161,14 +1161,14 @@
   .lead {
     margin: 1rem 0 0.2rem;
     color: var(--body-color);
-    font-size: 0.98rem;
+    font-size: 1.06rem;
     line-height: 1.85;
   }
 
   .para {
     margin: 0.75rem 0;
     color: var(--body-color);
-    font-size: 0.93rem;
+    font-size: 1.06rem;
     line-height: 1.85;
   }
 
@@ -1179,7 +1179,7 @@
     border-radius: 0 0.75rem 0.75rem 0;
     background: var(--warm-color);
     color: var(--body-color);
-    font-size: 0.93rem;
+    font-size: 1rem;
     line-height: 1.8;
     font-style: italic;
     font-family: Georgia, "Times New Roman", serif;
@@ -1243,7 +1243,7 @@
     margin-bottom: 0.5rem;
     color: var(--accent, var(--muted-color));
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -1253,7 +1253,7 @@
     margin-bottom: 0.65rem;
     color: var(--ink-color);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.98rem;
+    font-size: 1.06rem;
     font-weight: 700;
     line-height: 1.4;
     font-style: italic;
@@ -1261,7 +1261,7 @@
 
   .card-copy {
     color: var(--body-color);
-    font-size: 0.9rem;
+    font-size: 1.06rem;
     line-height: 1.75;
   }
 
@@ -1274,13 +1274,13 @@
     margin-bottom: 0.55rem;
     color: var(--accent, var(--ink-color));
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
 
   .callout-copy {
     color: var(--body-color);
-    font-size: 0.9rem;
+    font-size: 1.06rem;
     line-height: 1.8;
   }
 
@@ -1318,14 +1318,14 @@
     background: var(--accent-surface);
     color: var(--accent);
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 0.82rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 
   .step-number {
     width: 2.3rem;
     height: 2.3rem;
-    font-size: 0.88rem;
+    font-size: 1rem;
   }
 
   .stack-title,
@@ -1344,7 +1344,7 @@
   .soft-card-title,
   .fact-title {
     margin-bottom: 0.35rem;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
 
@@ -1358,7 +1358,7 @@
 
   .citation {
     margin: -0.35rem 0 0.95rem;
-    font-size: 0.77rem;
+    font-size: 1.06rem;
     font-style: italic;
   }
 
@@ -1373,7 +1373,7 @@
 
   .fact-copy {
     color: var(--body-color);
-    font-size: 0.9rem;
+    font-size: 1.06rem;
     line-height: 1.75;
   }
 
@@ -1383,7 +1383,7 @@
     padding-top: 0.75rem;
     border-top: 1px solid var(--rule-color);
     color: var(--muted-color);
-    font-size: 0.82rem;
+    font-size: 1.06rem;
     font-style: italic;
   }
 
@@ -1403,18 +1403,18 @@
   .mini-label {
     margin-bottom: 0.3rem;
     color: var(--accent, var(--ink-color));
-    font-size: 0.82rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 
   .mini-label.larger {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   .mini-value {
     margin-bottom: 0.35rem;
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 0.95rem;
+    font-size: 1.06rem;
     font-weight: 700;
   }
 
@@ -1443,18 +1443,18 @@
 
   .phase-name {
     color: var(--accent, var(--ink-color));
-    font-size: 0.78rem;
+    font-size: 0.9rem;
     font-weight: 700;
   }
 
   .phase-subheading {
     margin: 0.35rem 0;
-    font-size: 0.9rem;
+    font-size: 1.06rem;
     font-weight: 700;
   }
 
   .phase-copy {
-    font-size: 0.78rem;
+    font-size: 1.06rem;
     line-height: 1.6;
   }
 
@@ -1481,19 +1481,19 @@
 
   .shape,
   .weight {
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     letter-spacing: 0.04em;
   }
 
   .micro-copy {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
   }
 
   .format-example {
     margin-bottom: 0.4rem;
     color: var(--muted-color);
-    font-size: 0.85rem;
+    font-size: 1.06rem;
     font-style: italic;
   }
 
@@ -1512,7 +1512,7 @@
   .warning-mark {
     flex-shrink: 0;
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
 
@@ -1524,7 +1524,7 @@
     background: var(--warm-color);
     color: var(--ink-color);
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 0.82rem;
+    font-size: 1.06rem;
     line-height: 1.75;
   }
 
@@ -1576,7 +1576,7 @@
     background: transparent;
     color: var(--ink-color);
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 0.74rem;
+    font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -1611,7 +1611,7 @@
   .chapter-progress {
     color: var(--muted-color);
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 0.74rem;
+    font-size: 0.8rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
   }

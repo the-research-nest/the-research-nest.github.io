@@ -24,7 +24,7 @@
     background: var(--pill-background);
     color: var(--pill-color);
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1;
     letter-spacing: 0.04em;
   }
