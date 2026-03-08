@@ -45,7 +45,7 @@ export const bigIdeaQuestions = [
     color: colors.rust,
     question: '"My AI has only 10K params. How much can it learn?"',
     description:
-      "You're building an AI for a hearing aid. It's tiny. What's the maximum knowledge you can squeeze in - and how should you write that knowledge?"
+      "You're building an AI for a tiny edge device. What's the maximum knowledge you can squeeze in, and how should you write that knowledge?"
   }
 ];
 

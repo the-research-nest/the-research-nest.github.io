@@ -178,9 +178,9 @@
           <div class="callout-title">Target: Why this matters in the real world</div>
           <div class="callout-copy">
             If we can answer these questions, we can build dramatically smaller, cheaper,
-            faster AIs for specific tasks. A hospital AI for diagnosing chest X-rays doesn't
+            faster AIs for specific tasks. A tax assistant AI doesn't
             need to know how to write poetry. If we know the exact minimum size it needs to
-            understand radiology - that changes how we build and deploy AI everywhere.
+            understand the law, that changes how we build and deploy AI everywhere.
           </div>
         </div>
 
@@ -233,7 +233,7 @@
         </div>
 
         <h3>Finding 1 - Scaling Laws - and the "Chinchilla Trap"</h3>
-        <p class="citation">Kaplan et al. 2020 - Hoffmann et al. (Chinchilla) 2022</p>
+        <p class="citation"><a href="https://arxiv.org/pdf/2001.08361">Kaplan et al. 2020</a> - <a href="https://arxiv.org/pdf/2203.15556">Hoffmann et al. (Chinchilla) 2022</a></p>
 
         <article
           class="fact-card"
@@ -242,11 +242,8 @@
           <div class="fact-title">The Chinchilla Rule</div>
           <div class="fact-copy">
             Google DeepMind's 2022 paper found that for any fixed compute budget, you should
-            train with roughly equal numbers of parameters and training tokens - a 1:20 ratio.
+            train with roughly equal numbers of parameters and training tokens.
             This became the dominant guideline for two years.
-          </div>
-          <div class="fact-footer">
-            Replicated across multiple independent studies. The D/N ~ 20 result is solid.
           </div>
         </article>
 
@@ -1311,14 +1308,14 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
     border-radius: 999px;
     border: 2px solid var(--accent);
     background: var(--accent-surface);
     color: var(--accent);
     font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
-    font-size: 1rem;
+    font-size: 0.99rem;
     font-weight: 700;
   }
 
