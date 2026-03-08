@@ -80,6 +80,7 @@
     gap: 1.5rem;
     align-items: end;
     margin-bottom: 2.2rem;
+    margin-top: 1rem;
   }
 
   h1,
@@ -94,7 +95,7 @@
     margin: 0;
     max-width: 11ch;
     color: var(--ink-color);
-    font-size: clamp(3rem, 7vw, 5.25rem);
+    font-size: clamp(2rem, 6vw, 3rem);
     line-height: 0.97;
     letter-spacing: -0.05em;
   }

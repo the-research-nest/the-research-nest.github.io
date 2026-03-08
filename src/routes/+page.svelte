@@ -20,8 +20,7 @@
       <h1>Bootstrapping practical intelligence for everyone.</h1>
       <p class="hero-text">
         An open research forum quietly focused on
-        efficient, practical approaches to capable systems. The work stays narrow, serious, and
-        evaluation-first.
+        efficient, practical approaches to capable systems.
       </p>
       <div class="cta-row">
         <a class="button primary" href="/research">Read research</a>
